@@ -31,12 +31,13 @@ const BookItem = ({ book, deleteBook, markBookAsTaken }) => {
                 >
                     Delete
                 </button>
+                {book.availableCopies > 0 && 
                 <button 
                     className='btn btn-info'
                     onClick={() => handleMarkAsTaken()}
                 >
                     Mark As Taken
-                </button>
+                </button>}
             </td>
         </tr>
     );
